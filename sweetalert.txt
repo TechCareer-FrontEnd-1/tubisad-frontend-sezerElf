@@ -1,1 +1,0 @@
-web sitelerinde gösterilen uyarı pencerelerini daha kullanışlı ve görsel olarak geliştirmemize olanak veren açık kaynak kodlu bir eklentidir. 
