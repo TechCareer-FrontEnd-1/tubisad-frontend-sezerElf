@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="tr">
+<!-- title-->
+<title>My page</title>
+<!-- favicon -->
+<link rel="icon" href="picture/favicon.jpg" />
+
+<!-- Turkce karakter -->
+<meta charset="utf-8" />
+
+<!-- responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- seo -->
+<meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,es5,es6" />
+<meta name="description" content="one pages, html5,css3,js,jquery,bootstrap,seo" />
+<meta name="author" content="Elif Sezer" />
+
+<!-- Google Fonts-->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+<!-- Font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+<!-- Bootstrap CSS v5.0.2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+<!-- jquery UI -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- animate CSS-->
+<link rel="stylesheet" href="css/animate.min.css">
+<!-- wow js-->
+<script src="js/wow.min.js"></script>
+<script> new WOW().init() </script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <!-- Navbar start -->
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-dark" id="navbar">
+        <!-- Container wrapper -->
+        <div class="container" id="navbar-example">
+            <!-- Navbar brand -->
+            
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_id"
+                aria-controls="navbar_id" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbar_id">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto  mb-2 mb-lg-0 ">
+                     <li  class="nav-item border-warning ">
+                            <a class="nav-link me-2 text-light" href="#ability"> </i>Hobilerim</a>
+                     </li>
+                    <li  class="nav-item border-warning">
+                        <a class="nav-link text-light" href="#section_3"> </i>Ben Kimim</a>
+                    </li>
+
+                    <li  class="nav-item border-warning">
+                        <a class="nav-link text-light" href="#section_2"></i>Yeteneklerim</a>
+                    </li>
+
+                    <li class="nav-item border-warning">
+                        <a class="nav-link text-light" href="#section_6"> </i>İletişim</a>
+                    </li>
+
+                    <li class="nav-item border-warning">
+                        <a class="nav-link text-light" href="#section_7"> </i>Benim Hakkımda</a>
+                    </li>
+
+                  
+
+
+
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li> -->
+                </ul>
+                <!-- Left links -->
+                
+                    <form class="d-flex" role="search">
+                        <input class="form-control " type="search" placeholder="Search" id="tags" aria-label="Search">
+                      
+                      </form>
+               
+                <div class="d-flex align-items-center" id="right_navbar">
+                    <button data-bs-toggle="modal" data-bs-target="#modelId" type="button"
+                        class="btn btn-link px-3 me-2">
+                        <i class="fa-solid fa-user-large" style="color:#ffca04"></i>
+                    </button>
+                    <button data-bs-toggle="modal" data-bs-target="#registerId" type="button"
+                        class="btn btn-primary btn-sm me-3">
+                        Register
+                    </button>
+                    
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal : Login -->
+    <!-- modal-login start -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: #4795c6 ;">
+                <div class="modal-header">
+                    <h6 class="modal-title text-warning">Giriş Yap</h6>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_email">
+                                            <i class="fa-solid fa-envelope text-warning"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input style="border: none; background-color: #4795c6;" type="text" id="user_email" name="user_email" placeholder="email adresiniz ..." class="form-control" />
+                                        <hr style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                        <span id="validation_email" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_password">
+                                            <i class="fa-solid fa-key text-warning"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input style="border: none; background-color: #4795c6;" type="password" id="user_password" name="user_password" placeholder="şifreniz ..." class="form-control " />
+                                        <hr style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                        <span id="validation_password" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-outline mt-2 mb-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="form2Example1">
+                                        </label></div>
+                                    <div class="col">
+                                        <button type="reset"  onclick="checkForm();" class="btn btn-outline-danger">Temizle</button>
+                                        <button id="btnSubmit" type="submit" class="btn btn-outline-warning">Giriş
+                                            Yap</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+    </div>
+    <!-- modal-login ends -->
+
+
+    <!-- Modal Register -->
+    <div class="modal fade " id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content " style="background-color: #4795c6 ;">
+                <div class="modal-header">
+                    <h6 class="text-center text-warning">Üye Ol</h6>
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form  id="basic-form">
+                        <!-- Email input -->
+
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_email">
+                                        <i class="fa-solid fa-user text-warning"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input style="border: none; background-color: #4795c6;" type="text" id="name" name="name" placeholder="Adınız" class="form-control " />
+                                        <hr style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                        <span id="validation_email" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_email">
+                                            <i class="fa-solid fa-envelope text-warning"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input style="border: none; background-color: #4795c6;" type="text" id="user_email" name="user_email" placeholder="email adresiniz ..." class="form-control" />
+                                        <hr style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                        <span id="validation_email" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="user_password">
+                                            <i class="fa-solid fa-key text-warning"></i>
+                                        </label></div>
+                                    <div class="col">
+                                        <input style="border: none; background-color: #4795c6;" type="password" id="password" name="user_password" placeholder="şifreniz ..." class="form-control" />
+                                        <hr style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                        <span id="validation_password" class="text-danger" style="font-size:.8rem ;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-outline mt-2 mb-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"> <label class="form-label" for="form2Example1">
+                                        </label></div>
+                                    <div class="col">
+                                        <button type="reset"  onclick="checkForm();" class="btn btn-outline-danger">Temizle</button>
+                                        <button id="btnSubmit" type="submit" class="btn btn-outline-warning">Üye Ol</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- header-start -->
+    <header id="header">
+        <div class="jumbotron text-white">
+            <div class="container" style="opacity:.9">
+                <div class="p-2 text-center">
+                    <h1  style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="text-uppercase  text-start text-warning display-1 shadow wow bounceIn animated" data-wow-delay=".40s">ELİF SEZER</h1>
+                        
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!-- header-end -->
+
+    <!-- main-start -->
+    <main>
+        <!-- section-10 ends : Icon -->
+        <section id="section10">
+            <div class="icon_message">
+                <h2 class="text-center text-uppercase display-6 text-light">Sosyal Medya</h2>
+                <div class="container">
+                    <div class="row">
+                        <div  class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownLeft animated"
+                            data-wow-delay=".40">
+                            <i class="fa-brands fa-github text-center text-light"></i>
+                            <h4 class="text-light">Github</h4>
+                            
+                            <div class="col-12 text-center"><button class="btn btn-outline-warning text-light"> <a href="https://github.com/sezerElf">Git</a></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInUpLeft animated"
+                            data-wow-delay=".50">
+                            <button style="background-color: #669bbc ;border:none ;"><i class="fa-brands fa-linkedin text-light" ><a href="https://www.linkedin.com/in/elif-sezer-05523b176/"></a></i></button>
+                            
+                            <h4 class="text-light">LinkedIn</h4>
+                           
+                            </p>
+                            <div class="col-12 text-center text-light"><button class="btn btn-outline-warning"><a href="https://www.linkedin.com/in/elif-sezer-05523b176/">Git</a></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-xl-4 text-center wow rotateInDownRight animated"
+                            data-wow-delay=".60">
+                            <i class="fa-brands fa-twitter text-light"></i>
+                            <h4 class="text-light">Twitter</h4>
+                            
+                            <div class="col-12 text-center"><button class="btn btn-outline-warning"><a href="https://www.twitter.com">Git</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-10 ends : Icon -->
+
+        <!-- section-1 start : ability -->
+        <section id="ability">
+            <div class="container" style="margin-top:3rem; margin-bottom:3rem;">
+                <p class="text-uppercase display-6 text-center text-light ">Hobilerim</p>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card  wow rotateInDownLeft animated">
+                            <i class="fa-solid fa-person-swimming text-center"></i>
+                            <div class="card-body ">
+                                <h4 class="card-title text-uppercase text-center">Tüplü Dalış</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md ">
+                        <div class="card wow rotateInDownLeft animated">
+                            <i class="fa-solid fa-campground text-center text-primary"></i>
+                            <div class="card-body ">
+                                <h2 class="card-title text-uppercase text-center">Kamp yapmak</h2>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md ">
+                        <div class="card wow rotateInDownRight animated" >
+                            <i class="fa-solid fa-person-biking text-center text-warning"></i>
+                            <div class="card-body ">
+                                <h4 class="card-title text-uppercase text-center">Spor Yapmak</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md ">
+                        <div class="card wow rotateInDownRight animated">
+                            <i class="fa-solid fa-kitchen-set text-center text-success"></i>
+                            <div class="card-body ">
+                                <h4 class="card-title text-uppercase text-center">Yemek Yapmak</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-1 end -->
+
+        <!-- parallax scrolling start -->
+        <section class="parallax_class">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center display-5 ">Gönüllülüklerim</h2>
+                    <ol>
+                        <li class="display-6">
+                            Google Developers Group Sakarya organizatörlüğü
+                        </li>
+                        <li class="display-6">
+                            Women Techmakers Sakarya organizatörlüğü
+                        </li>
+                    </ol>
+                    
+                    
+                    <div class="col-12 text-center"><button class="btn btn-outline-primary">More ...</button></div>
+                </div>
+            </div>
+
+        </section>
+        <!-- parallax scrolling start -->
+
+        <!-- section-3 start : NewsPaper -->
+        <section id="section_3">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-uppercase display-6 text-center wow rotateInDownLeft animated mb-4 text-light" data-wow-delay=".40">
+                        Ben Kimim ?</h2>
+                    <p id="newspaper_id" class=" wow rotateInDownRight animated text-light" data-wow-delay=".40">
+                        Edirne’de 1999 yılının 7 Kasım günü üçüzlerimle beraber Sezer ailesinin yeni fertleri olarak dünyaya geldik. Annem vebabamla her zaman çok iyi anlaştık. 3.5 yaşıma geldiğimde okul hayatına ilk adımı kreşe başlayarak atmış oldum. 5 yaşıma kadar bu şehirde yaşadık ancak o yaştan sonra babamın mesleği dolayısıyla doğu görev yerimiz olan Batman’a taşınmak zorunda kaldık.İlkokul hayatım burada başlayıp burada bitirdim. Ortaokul zamanı geldiğinde yine babamın mesleği dolayısıyla Düzce’nin Akçakoca ilçesine taşındık. 3 sene burada yaşadık. Ortaokul hayatım da burada başlayıp yine burada son buldu.Lise hayatı başlayacağından dolayı daha iyi bir eğitim ve öğretim için tekrar Edirne’ye tayin olduk.Edirne’de Edirne Yıldırım Beyazıt Anadolu lisesine başladım. Güzel bir lise hayatı geçirdikten sonra lise de böylece bitmiş oldu. Ve üniversite sınavı geldi. Üniversite sınavına girdiğim ilk sene sınava tekrar hazırlanmaya karar verdim ve kardeşlerim de benimle beraber hazırlandı. Bir sene ders çalışmaya zaman ayırıp dershaneye başladık.Çalışmam sonucunda Sakarya Ünivesitesi Bilgisayar Mühendisliği bölümünü kazandım.Hayatıma Sakarya’da devam etmek zorunda kaldım.Güzel arkadaşlıklarım ve güzel bir eğitimle hayatıma devam ettim.2022 yılında üniversiteyi bitirdim.
+                    </p>
+                   
+                    
+                </div>
+            </div>
+        </section>
+        <!-- section-3 end -->
+
+        <!-- section-2 start -->
+        <section id="section_2">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-uppercase display-6 text-center wow rotateInDownLeft animated mb-4 text-light" data-wow-delay=".40">
+                        Yeteneklerim</h2>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/css.png" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">CSS</h4>
+                                <p class="card-text"> web sitelerinin görsel olarak şekillendirilmesine olanak tanıyan ve kendine has kuralları olan bir tanım dilidir</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/bootstrap.png" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Bootstrap</h4>
+                                <p class="card-text"> kullanılabilir kod parçalarından oluşan açık kaynaklı ve ücretsiz bir web uygulaması geliştirme araç takımıdır. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/javas.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">JavaScript</h4>
+                                <p class="card-text">JavaScript, HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama dilidir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/htmll.png" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">HTML</h4>
+                                <p class="card-text">Hiper Metin İşaretleme Dili web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir. Dilin son sürümü HTML5'tir. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/java.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Java</h4>
+                                <p class="card-text">Açık kaynak kodlu, nesneye yönelik, zeminden bağımsız, yüksek verimli, çok işlevli, yüksek seviye, adım adım işletilen bir dildir.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/react.png" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">React</h4>
+                                <p class="card-text">Kullanıcı arayüzü oluşturmaya yarayan açık kaynak kodlu bir javascript kütüphanesidir.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/github.jpeg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">GitHub</h4>
+                                <p class="card-text">Sürüm kontrol sistemi olarak Git kullanan yazılım geliştirme projeleri için web tabanlı bir depolama servisidir.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="picture/c.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">C#</h4>
+                                <p class="card-text">Microsoft tarafından .NET Teknolojisi için geliştirilen modern bir programlama dilidir. Sözdizimi C-like bir deneyim sunar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="section_8" >
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center display-6 text-light">Eğitim</h2>
+                    <div class="tab col-md-2">
+                        <button  class="tablinks  mb-2" onclick="openCity(event, 'Lise')" id="defaultOpen">Lise</button>
+                        <button class="tablinks mb-2" onclick="openCity(event, 'Üniversite')">Üniversite</button>
+                        <button class="tablinks " onclick="openCity(event, 'Bootcamp')">Bootcamp</button>
+                      </div>
+                      
+                      <div id="Lise" class="tabcontent col-md-10">
+                        <div class="row align-items-center text-light "> <div class="col-md-8"><h3>Lise</h3>
+                        <p>Edirne Yıldırım Beyazıt Anadolu Lisesi</p>
+                        <p>2013-2017</p>
+                        <p>Mezuniyet puanı : 87.7/100</p></div>
+                        <div class="col-md-4 text-center" >
+                            <i  style=" color: rgb(217, 165, 33); " class="fa-solid fa-school"></i>
+                        </div>
+                    </div>
+                       
+                        
+                       
+                      </div>
+                      
+                      <div id="Üniversite" class="tabcontent col-md-10 text-light">
+                        <div class="row align-items-center "> 
+                            <div class="col-md-8">
+                               <h3>Üniversite</h3>
+                               <p>Sakarya Üniversitesi</p> 
+                               <p>2018-2022</p>
+                               <p>GNO:3.3/4</p>
+                            </div>
+                        <div class="col-md-4 text-center">
+                            <i  style=" color: rgb(217, 165, 33);" class="fa-solid fa-building-columns"></i></div>
+                        </div>
+                        
+                       
+                      </div>
+                      
+                      <div id="Bootcamp" class="tabcontent col-md-10">
+                        <div class="row align-items-center text-light ">
+                            <div class="col-md-8">
+                                <h3>Bootcamp</h3>
+                            <p>Tübisad Front-End Bootcamp </p>
+                            <p>2022</p>
+                            </div>
+                             <div class="col-md-4 text-center">
+                                <a >
+                                    <img class="w-100" src="//d9hhrg4mnvzow.cloudfront.net/www.techcareer.net/mainpage/en/57e21290-techcareer-logo-web_104600g000000000000028.png"
+                                      />
+                                </a>
+                             </div>
+                            
+                        </div>
+                       
+                      </div>
+                </div>
+               
+            </div>
+
+        </section>
+        <!-- section-2 end -->
+        <section class="mt-2" id="section_10 ">
+            <div class="container">
+                <div class="row align-items-center text-center">
+                    <h2 class="text-center display-6 text-light">Bildiğim Diller</h2>
+                    <div class="col-md-6">
+                        <h2 class="text-end text-light">
+                            İngilizce
+                        </h2>
+                        <p class="text-end">
+                            <i class="fa-solid fa-circle text-light"></i>
+                            <i class="fa-solid fa-circle text-light"></i>
+                            <i class="fa-solid fa-circle text-light"></i>
+                            <i class="fa-regular fa-circle text-light"></i>
+                            <i class="fa-regular fa-circle text-light"></i>
+                        </p>
+                    </div>
+                    <div class="col-md-6 wow rotateInUpLeft animated mb-4" data-wow-delay=".40">
+                        <a><img  class="w-50  text-end" style="clip-path: polygon(20% 0, 71% 0, 71% 100%, 19% 100%);border-radius: 20%;"  src="./picture/eng.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-2" id="section_11">
+            <div class="container">
+                <div class="row align-items-center text-center">
+                    <div class="col-md-6  wow rotateInUpRight animated mb-4" data-wow-delay=".40">
+                        <a ><img class="w-25 rounded" src="./picture/turk.png" alt=""></a>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-start text-light">Türkçe</h2>
+                        <p class="text-start">
+                            <i class="fa-solid fa-circle text-light"></i>
+                            <i class="fa-solid fa-circle text-light"></i>
+                            <i class="fa-solid fa-circle text-light"></i>
+                            <i class="fa-solid fa-circle text-light"></i>
+                            <i class="fa-solid fa-circle text-light"></i>
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section-6 start -->
+        <!-- contact -->
+        <section id="section_6">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center text-uppercase  display-6 text-light">İletişim</h2>
+                    </div>
+                    <div class="col-md-6" >
+                        <form action="#!" id="contact_form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input style="outline-style: none ;" type="text" placeholder="adınız" class="form-control text-light">
+                                    <hr  style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="soyadınız" class="form-control">
+                                    <hr  style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="email" placeholder="deneme@xyz.com" class="form-control">
+                                    <hr  style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="number" placeholder="numaranız" class="form-control">
+                                    <hr  style="margin-top:-5px; color:#ff9f04 ;height:3px ;">
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <textarea style="border:none ; background-color: #4795c6;" name="message" rows="6" class="form-control" id="message"
+                                            placeholder="Mesajınız" required=""></textarea>
+                                            <hr>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <button type="reset" class="btn btn-outline-danger">Clear </button>
+                                        <button type="submit" class="btn btn-outline-warning">Send Message </button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6" >
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d96692.47483490812!2d30.3792128!3d40.7699456!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d36.842045999999996!2d30.599106!5e0!3m2!1str!2str!4v1658149407757!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-6 start -->
+
+        <!-- section-7 start -->
+        <section id="section_7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-light">
+                        <span>Benim Hakkımda</span>
+                        <h4>Bilgisayar Mühendisi <em>Frontend</em></h4>
+                        <p> <em style="color: #f5a425; background-color:rgb(0, 0, 0);padding: .2rem;"> Sakarya Üniversitesi</em>
+                            Bilgisayar Mühendisliği bölümünü kazandım.2018 eylül tarihinde başladığım okulumu 2022 haziran tarihinde 3.3 ortalama ile
+                            bitirdim.Okuduğum esnada bazı sosyal faaliyetlerde bulundum bunlar : Google Developers Group Sakarya
+                            organizatörlüğü ve women techmakers Sakarya organizatörlüğü.Bölümümle alakalı organizasyonların yanı sıra başka bir okulun 
+                            Su altı topluluğuna katıldım ve orda da faaliyet gösterdim.Okulda ve kendimin yaptığı projelere github adresimden erişebilirsiniz
+                            <a rel="nofollow" href="https://github.com/sezerElf"
+                                target="_parent">GitHub</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-light">
+                        <h4>Profilim</h4>
+                        <a href="https://www.youtube.com">
+                            <img style="max-width: 35rem; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+                            " src="picture/1581425208588.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section_9" >
+           
+            <div class="container text-light">
+                <p class="text-center text-light">I am awesome , chechk some interesting facts</p>
+                <div class="row text-center ">
+                    <div  class="col-md-3 ">
+                        <i class="fa-solid fa-mug-hot text-warning"></i>
+                        <h5 class="coffe text-center "></h5>
+                        <h6 class="text-center">Bardak kahve</h6>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-clock text-warning"></i>
+                        <h5 class="work text-center"></h5>
+                        <h6 class="text-center">Saat çalışma</h6>
+                   </div>
+                   <div class="col-md-3">
+                    <i class="fa-solid fa-code text-warning"></i>
+                    <h5 class="code text-center"></h5>
+                    <p class="text-center">Satır kod</p>
+                   </div>
+                   <div class="col-md-3">
+                    <i class="fa-solid fa-rocket text-warning"></i>
+                    <h5 class="project text-center"></h5>
+                    <h6 class="text-center">Tamamlanan proje</h6>
+                   </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- section-7 start -->
+
+    </main>
+    <!-- main-end -->
+
+
+    <!-- footer-start -->
+    <footer class="text-center text-lg-start">
+        <!-- footer-tab-1 start -->
+        <section id="section_footer_1" class="p-4 border-top d-flex justify-content-center justify-content-lg-between">
+            <div class="me-5 d-none d-lg-block">
+                <span>One pages</span>
+            </div>
+
+            <!-- social -->
+            <div id="social_id">
+                <a href="#!" class="me-1 btn btn-outline-primary text-reset btn-floating">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#!" class="me-1 btn btn-outline-warning text-reset btn-floating">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <a href="#!" class="me-1 btn btn-outline-success text-reset btn-floating">
+                    <i class="fa-brands fa-telegram"></i>
+                </a> <a href="#!" class="me-1 btn btn-outline-info text-reset btn-floating">
+                    <i class="fa-brands fa-google"></i>
+                </a> <a href="#!" class="me-1 btn btn-outline-danger text-reset btn-floating">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <!-- footer-tab-1 end -->
+
+        <!-- footer-tab-2 start -->
+        <section id="section_footer_2">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-4">
+                    <!-- medium device:4 
+                    large device :3
+                    xlarge device :4 -->
+
+                    <!-- left-1 -->
+                
+
+                    <!-- left-2 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">FrontEnd</h6>
+                        <p><a href="" class="text-reset">Html5</a></p>
+                        <p><a href="" class="text-reset">CSS3</a></p>
+                        <p><a href="" class="text-reset">JS</a></p>
+                    </div>
+
+                    <!-- left-3 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">Backend</h6>
+                        <p><a href="" class="text-reset">Node JS</a></p>
+                        <p><a href="" class="text-reset">Java</a></p>
+                        <p><a href="" class="text-reset">C#</a></p>
+                    </div>
+
+                    <!-- left-4 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow" id="address_id">
+                        <h6 class="text-uppercase mb-3">Contact</h6>
+                        <p><i class="fa-solid text-warning fa-earth-africa"></i> Turkey</p>
+                        <p><i class="fa-solid text-warning fa-envelope-open-text"></i>
+                            <a href="mailto:elifsezer724@gmail.com">elifsezer724@gmail.com</a>
+                        </p>
+                        <p><i class="fa-solid text-warning fa-mobile-retro"></i>
+                            <a href="tel:05442783200">0544 278 3200</a>
+                        </p>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button onclick="date()" class="btn btn-outline-danger">Date</button>
+                            <span id="date_id"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-tab-2 end -->
+
+        <!-- CopyRight -->
+        <div class="text-center p-5 bg-dark" id="copy_right">
+             ©2022 Copyright;
+            <a href="mailto:elifsezer724@gmail.com" class="">Elif Sezer</a>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <div id="yukari">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <!-- External JS -->
+    <script src="template.js"></script>
+</body>
+
+</html>
